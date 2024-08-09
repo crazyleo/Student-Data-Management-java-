@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Index</title>
+  <style type="text/css">
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(45deg, #ff0000, #ff9900, #33cc33, #3399ff, #9900cc);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40%;
+      width:40%;
+    }
+ 
+    #uni {
+      color: #4CAF50;
+      font-size: 30px;
+    }
+     #uni1 {
+      color: black;
+      font-size: 40px;
+    }
+
+    #loginPage {
+      height: 40%;
+      width:60%;
+      border: solid 3px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      padding: 15px;
+    }
+
+    form {
+      display: grid;
+      grid-gap: 20px;
+    }
+
+    label {
+      font-size: 18px;
+      color: #333;
+      text-align: left;
+      display: block;
+    }
+
+    input {
+      width: 100%;
+      padding: 15px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      font-size: 18px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    #error-message {
+      color: red;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="studentPortal">
+    <h1 id="uni1">University Result Portal</h1>
+  </div>
+  <div id="container">
+    <div id="loginPage">
+      <h1 id="uni">Login page</h1>
+      <form action="/project_2/Validation">
+        <label for="usn">UserName:</label>
+        <input type="text" id="usn" name="usn" placeholder="Enter your name">
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass" name="pass" placeholder="Enter your password">
+
+        <input type="submit" value="Get Result">
+      </form>
+      <h3 id="error-message">* Incorrect username or password, please try again</h3>
+    </div>
+  </div>
+</body>
+
+</html>
